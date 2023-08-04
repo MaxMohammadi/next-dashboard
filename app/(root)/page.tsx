@@ -5,6 +5,7 @@ import Link from 'next/link';
 import { cn } from '@/lib/utils';
 import { buttonVariants } from '@/components/ui/button';
 import Login from '@/components/Login';
+import Dashboard from '@/app/(dashboard)/dashboard/page';
 
 export const metadata: Metadata = {
   title: 'Login | Merchant Interface',
@@ -14,7 +15,8 @@ export const metadata: Metadata = {
 const AuthenticationPage = () => {
   return (
     <>
-      <div className="relative h-full flex-col items-center justify-center md:grid lg:max-w-none lg:grid-cols-2 lg:px-0">
+      <Dashboard/>
+      {/* <div className="relative h-full flex-col items-center justify-center md:grid lg:max-w-none lg:grid-cols-2 lg:px-0">
         <Link
           href="#"
           className={cn(
@@ -46,14 +48,14 @@ const AuthenticationPage = () => {
         </div>
         <div className="lg:p-8">
           <div className="mx-auto flex w-full flex-col justify-center space-y-6 sm:w-[350px]">
-            {/* <div className="flex flex-col space-y-2 text-center">
+            <div className="flex flex-col space-y-2 text-center">
               <h1 className="text-2xl font-semibold tracking-tight">
                 Log in as Merchant
               </h1>
               <p className="text-sm text-muted-foreground">
                 Enter your email &amp; password to continue.
               </p>
-            </div> */}
+            </div>
             <Login />
             <p className="px-8 text-center text-sm text-muted-foreground pb-6">
               By logging in, you agree to our <br />
@@ -74,7 +76,7 @@ const AuthenticationPage = () => {
             </p>
           </div>
         </div>
-      </div>
+      </div> */}
     </>
   );
 };

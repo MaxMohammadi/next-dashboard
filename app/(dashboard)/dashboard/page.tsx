@@ -19,13 +19,13 @@ export const metadata: Metadata = {
 };
 
 const Dashboard = async () => {
-  const session = await getServerSession(authOptions);
+  // const session = await getServerSession(authOptions);
 
-  if (!session) {
-    redirect('/');
-  }
+  // if (!session) {
+  //   redirect('/');
+  // }
 
-  console.log('session', session);
+  // console.log('session', session);
 
   return (
     <>
